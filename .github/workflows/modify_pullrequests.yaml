@@ -15,10 +15,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Modify README
-      run: |
-        echo "MODIFIED" >> README.md
-
     - name: Check if there are changes
       id: diff
       run: git diff --quiet
